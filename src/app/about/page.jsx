@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './about.module.css'
 
 const AboutPage = () => {
+    console.log("let's check")
     return (
         <div className={styles.container}>
             <div className={styles.textContainer}>
@@ -32,7 +33,7 @@ const AboutPage = () => {
                 </div>
             </div>
             <div className={styles.imageContainer}>
-                <Image src='/about.png' alt='' fill className={styles.img}/>
+                <Image src='/about.png' alt='' fill className={styles.img} />
             </div>
         </div>
     )
