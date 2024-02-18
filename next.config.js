@@ -3,7 +3,7 @@ const nextConfig = {
     images: {
         remotePatterns: [{
             protocol: 'https',
-            hostname: 'pixels.com'
+            hostname: 'images.fineartamerica.com'
         }]
     }
 }

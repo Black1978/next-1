@@ -1,2 +1,2 @@
-# Front-end with React.js & Next.js 14
+# App with React.js & Next.js 14
 Blog App

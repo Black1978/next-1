@@ -13,7 +13,7 @@ import { getPosts } from '@/lib/data'
 
 const BlogPage = async () => {
     // const posts = await getDate()
-       const posts = getPosts()
+       const posts = await getPosts()
     return (
         <div className={styles.container}>
             {posts.map((post) => {
