@@ -2,22 +2,6 @@ import { unstable_noStore } from 'next/cache'
 import { Post, User } from './models'
 import { connectToDb } from './utils'
 
-// const users = [
-//     { id: 1, username: 'John' },
-//     { id: 2, username: 'Jane' },
-// ]
-
-// const posts = [
-//     { id: 1, title: 'Post 1', body: '1......', userId: 1 },
-//     { id: 2, title: 'Post 2', body: '2......', userId: 1 },
-//     { id: 3, title: 'Post 3', body: '3......', userId: 2 },
-//     { id: 4, title: 'Post 4', body: '4......', userId: 2 },
-//     { id: 5, title: 'Post 5', body: '5......', userId: 1 },
-//     { id: 6, title: 'Post 6', body: '6......', userId: 1 },
-//     { id: 7, title: 'Post 7', body: '7......', userId: 2 },
-//     { id: 8, title: 'Post 8', body: '8......', userId: 2 },
-// ]
-
 export const getPost = async (slug) => {
     try {
         connectToDb()
