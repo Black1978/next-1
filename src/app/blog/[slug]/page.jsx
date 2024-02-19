@@ -2,29 +2,29 @@ import React, { Suspense } from 'react'
 import styles from './singlePost.module.css'
 import Image from 'next/image'
 import PostUser from '@/components/postUser/PostUser'
-import { getPost } from '@/lib/data'
+// import { getPost } from '@/lib/data'
 
-// const getDate = async (slug) => {
-//     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${slug}`)
-//     if (!res.ok) {
-//         throw new Error('Something went wrong')
-//     }
-//     return res.json()
-// }
-
-export const generateMetadata = async ({ params }) => {
-    const { slug } = params
-    const post = await getPost(slug)
-    return {
-        title: post.title,
-        description: post.desc,
+const getDate = async (slug) => {
+    const res = await fetch(`http://localhost:3000/api/blog/${slug}`)
+    if (!res.ok) {
+        throw new Error('Something went wrong')
     }
+    return res.json()
 }
+
+// export const generateMetadata = async ({ params }) => {
+//     const { slug } = params
+//     const post = await getPost(slug)
+//     return {
+//         title: post.title,
+//         description: post.desc,
+//     }
+// }
 
 const SinglePostPage = async ({ params }) => {
     const { slug } = params
-    // const post = await getDate(slug)
-    const post = await getPost(slug)
+    const post = await getDate(slug)
+    // const post = await getPost(slug)
 
     return (
         <div className={styles.container}>
