@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    max-width: 500px;
+    background-color: var(--bgSoft);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.github {
+    width: 100%;
+    cursor: pointer;
+    padding: 20px;
+}

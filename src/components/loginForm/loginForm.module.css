@@ -1,0 +1,21 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.form input {
+    background-color: #ffffff99;
+    color: var(--text);
+    padding: 20px;
+}
+
+.form button {
+    background-color: blue;
+    color: var(--text);
+    padding: 10px;
+    font-weight: 500;
+    border: none;
+}
